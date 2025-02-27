@@ -134,23 +134,23 @@
 
   <!-- Main JavaScript -->
   <script src="js/script.js"></script>
-  <!-- Instant Indexing using IndexNow Protocol -->
-  <script>
-    function pingIndexNow() {
-      const endpoint = "https://api.indexnow.org/indexnow";
-      const currentUrl = encodeURIComponent(window.location.href);
-      // Replace with your own IndexNow key and key location URL after generating them
-      const key = "YOUR_INDEXNOW_KEY";
-      const keyLocation = encodeURIComponent("https://hdhub4utv.github.io/gate2025/YOUR_INDEXNOW_KEY.txt");
-      fetch(`${endpoint}?url=${currentUrl}&key=${key}&keyLocation=${keyLocation}`)
-        .then(response => response.json())
-        .then(data => console.log("IndexNow response:", data))
-        .catch(error => console.error("IndexNow error:", error));
-    }
+<!-- Instant Indexing using IndexNow Protocol -->
+<script>
+  function pingIndexNow() {
+    const endpoint = "https://api.indexnow.org/indexnow";
+    const currentUrl = encodeURIComponent(window.location.href);
+    // Using the sample key provided below.
+    const key = "a1b2c3d4e5f67890123456789abcdef0";
+    const keyLocation = encodeURIComponent("https://hdhub4utv.github.io/gate2025/a1b2c3d4e5f67890123456789abcdef0.txt");
+    fetch(`${endpoint}?url=${currentUrl}&key=${key}&keyLocation=${keyLocation}`)
+      .then(response => response.json())
+      .then(data => console.log("IndexNow response:", data))
+      .catch(error => console.error("IndexNow error:", error));
+  }
 
-    document.addEventListener("DOMContentLoaded", function() {
-      pingIndexNow();
-    });
-  </script>
+  document.addEventListener("DOMContentLoaded", function() {
+    pingIndexNow();
+  });
+</script>
 </body>
 </html>
