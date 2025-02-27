@@ -1,0 +1,191 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Global Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Center align all text on the page */
+  }
+  
+  /* Header & Navigation */
+  header {
+    background: linear-gradient(135deg, #0066cc, #00ccff);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffeb3b;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 60px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Main Content Styles */
+  main {
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align main content */
+  }
+  
+  main section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+  
+  main section:last-of-type {
+    border-bottom: none;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0066cc;
+  }
+  
+  main p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+  
+  /* Form Elements */
+  form {
+    margin-top: 15px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  form input[type="number"],
+  form select {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* Center input text */
+  }
+  
+  form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0066cc;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Table Styles for Answer Key */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; /* Center the table */
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center; /* Center table text */
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+/* Read More Button Styles */
+#readMoreBtn {
+    background-color: #db960c;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #readMoreBtn:hover {
+    background-color: #005bb5;
+  }
+    
